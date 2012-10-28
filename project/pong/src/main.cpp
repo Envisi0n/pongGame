@@ -7,16 +7,14 @@
 
 #include <iostream>
 #include "SDL/SDL.h"
+#include "game.h"
 
 
 int main( int argc, char *argv[]) {
 
-	SDL_Init( SDL_INIT_EVERYTHING );
+	Game game;
 
-
-	std::cout << "Hello world" << std::endl;
-
-	SDL_Quit();
+	game.run();
 
 	return 0;
 
