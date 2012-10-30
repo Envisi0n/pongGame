@@ -6,6 +6,7 @@
  */
 
 #include "menu.h"
+#include <iostream>
 
 menu::menu() {
 	// TODO Auto-generated constructor stub
@@ -34,7 +35,7 @@ void menu::draw(SDL_Surface* screen) {
 	for (vector<button*>::iterator it = buttons.begin(); it != buttons.end();
 			++it) {
 
-
+		std::cout << "draw" <<  screen << endl;
 		(*it)->draw(screen);
 
 	}

@@ -54,11 +54,14 @@ bool Game::init() {
 
 	// Load background image
 
+	std::cout << screen << endl;
+
 	background = load_image( "images/background.png") ;
 
 	apply_surface( 0, 0, background, screen );
 
 	gamemenu.addButton( 170, 120, 320, 240, "button.png");
+
 
 	//If everything initialized fine
 
